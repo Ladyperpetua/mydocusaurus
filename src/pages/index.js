@@ -12,10 +12,12 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        {/*h1 tag changed to h4 */}
+        <h4 className="hero__title">{siteConfig.title}</h4>
+        {/*p tag changed to span */}
+        <span className="hero__subtitle">{siteConfig.tagline}</span>
         <div className={styles.buttons}>
-          <Link
+          <Link 
             className="button button--secondary button--lg"
             to="/docs/intro">
             Docusaurus Tutorial - 5min ⏱️
